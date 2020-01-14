@@ -17,9 +17,9 @@ public class laundry {
        
          String flag ;
        if (Jenis == "Baju"){
-            Harga= "25000";
+            Harga= "10000";
             a = 1;
-            flag="25000";
+            flag="10000";
             
         }
         else if (Jenis =="Gorden"){
