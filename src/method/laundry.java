@@ -11,7 +11,7 @@ package method;
  */
 
 public class laundry {
-   public static String harga;
+   public static String Harga;
     public static int a =0;
     public String jenis( Object Jenis){
        
