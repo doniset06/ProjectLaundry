@@ -111,12 +111,12 @@ public class Regist extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed
-//            String value = this.doRegis(txtUser2.getText(), new String(txtPass2.getPassword()));
-            if(txtUser2.getText().equals("admin")&&txtPass2.getText().equals("admin")) {
-                JOptionPane.showMessageDialog(null,"berhasil login");
+            String value = this.doRegis(txtUser2.getText(), new String(txtPass2.getPassword()));
+            if(!value.equals("Sukses")) {
+                JOptionPane.showMessageDialog(null, value);
             }
             else {
-                 JOptionPane.showMessageDialog(null,"gagal login");
+                 JOptionPane.showMessageDialog(null, value);
                  LoginLaundry lg = new LoginLaundry();
                  lg.setVisible(true);
                  dispose();

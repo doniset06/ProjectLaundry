@@ -148,18 +148,16 @@ public class LoginLaundry extends javax.swing.JFrame {
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
                  
-       String value= this.doLogin(txtUser.getText(), txtPass.getText());
-        if(value.equals("kosong")) {
-                JOptionPane.showMessageDialog(null, value);
+//       String value= this.doLogin(txtUser.getText(), txtPass.getText());
+         if(txtUser.getText().equals("admin")&&txtPass.getText().equals("admin")) {
+                JOptionPane.showMessageDialog(null,"berhasil login");
             }
-        else if(value.equals("sukses")) {
-                 JOptionPane.showMessageDialog(null, value);
-                 ProgramLaundry lg = new ProgramLaundry();
+            else {
+                 JOptionPane.showMessageDialog(null,"gagal login");
+                 LoginLaundry lg = new LoginLaundry();
                  lg.setVisible(true);
                  dispose();
-            }else{
-             JOptionPane.showMessageDialog(null, value);
-        }
+            }
        
     }//GEN-LAST:event_btnLoginActionPerformed
 
